@@ -1,0 +1,131 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #333;
+  font-style: normal;
+  /* ver si queda este color aqui o no posicionado */
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 30px 5px 30px #333;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo svg {
+  cursor: pointer;
+  width: 75px;
+}
+
+.logo p {
+  cursor: pointer;
+  margin-top: 0;
+  font-weight: bold;
+  color: #339cff;
+}
+
+header nav ul{
+    display: none;
+}
+
+header div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+nav ul {
+  display: none;
+}
+
+nav ul.open {
+  display: block;
+  position: absolute;
+  left: 0;
+  margin: 0;
+  padding-left: 0;
+  top: 164px;
+  width: 100%;
+}
+
+nav ul.open li{
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+nav ul.open li:hover{
+    background-color: hsla(50, 100%, 52%, 0.5);
+}
+
+nav ul.open li.active{
+    background-color: hsla(50, 100%, 52%, 1);
+}
+
+nav ul.open li a{
+    text-decoration: none;
+}
+
+.hamburgerBtn span:nth-child(1) {
+  display: block;
+}
+.hamburgerBtn span:nth-child(2) {
+  display: none;
+}
+
+.hamburgerBtn.open span:nth-child(1) {
+  display: none;
+}
+.hamburgerBtn.open span:nth-child(2) {
+  display: block;
+}
+
+.button{
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5%;
+    background-color: hsla(50, 100%, 52%, 0.7);
+    padding: 0.7rem;
+    color: #333;
+    font-weight: bold;
+    border: 2px solid #333;
+}
+
+.button:hover{
+    background-color: #ffd60a;
+}
+
+.hamburgerBtn{
+    padding: 0.7rem;
+    border-radius: 5%;
+    font-weight: bold;
+    width: 50px;
+    background-color: #fff;
+    border: 2px solid #333;
+    cursor: pointer;
+}
+
+.hamburgerBtn:hover{
+    background-color: #eee;
+}
+
+.hamburgerBtn span{
+    color: #339cff;
+}
+
+/* Poner el icono chiquitito en todas las paginas */

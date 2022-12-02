@@ -1,0 +1,31 @@
+@media only screen and (min-width: 64rem) {
+    .hamburgerBtn{
+        display: none;
+    }
+
+    header nav ul#primaryNav{
+        display: flex;
+        position: initial;
+    }
+
+    header nav ul#primaryNav{
+        list-style-type: none;
+    }
+    header nav ul#primaryNav li{
+        padding: 1rem;
+    }
+
+    header nav ul#primaryNav li.active{
+        border: 2px solid hsla(50, 100%, 52%, 0.5);
+        border-radius: 5%;
+    }
+
+    header nav ul#primaryNav li:hover{
+        border: 2px solid hsla(50, 100%, 52%, 1);
+        border-radius: 5%;
+    }
+
+    header nav ul#primaryNav a{
+        text-decoration: none;
+    }
+}
