@@ -1,3 +1,21 @@
 @media only screen and (min-width: 35rem) {
-    
+  nav ul.open li a {
+    font-size: 1.2rem;
+  }
+
+  main .hero h1 {
+    font-size: 2.5rem;
+  }
+  .button {
+    font-size: 1.2rem;
+  }
+
+  main .hero .button {
+    width: 100%;
+    max-width: 290px;
+  }
+
+  .card-container{
+    grid-template-columns: 1fr 1fr;
+  }
 }
