@@ -18,4 +18,39 @@
   .card-container{
     grid-template-columns: 1fr 1fr;
   }
+
+  .fresh, .social-media{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fresh-drink{
+    padding: 1rem;
+    justify-self: flex-end;
+  }
+
+  .fresh-drink img, .social-media-img img{
+    border: 3px solid #333;
+    border-radius: 4px;
+  }
+
+  .fresh-drink, .fresh-info, .social-media-info, .social-media-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fresh-info, .social-media-info{
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  .social-media{
+    height: 600px;
+  }
+
+  .social-media-img{
+    padding: 1rem;
+    justify-self: flex-start;
+  }
 }

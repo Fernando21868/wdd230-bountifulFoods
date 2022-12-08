@@ -11,8 +11,14 @@
   header nav ul#primaryNav {
     list-style-type: none;
   }
+
   header nav ul#primaryNav li {
     padding: 1rem;
+  }
+
+  header nav ul#primaryNav li:nth-child(2){
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
   }
 
   header nav ul#primaryNav li.active {
