@@ -327,4 +327,66 @@ article.card,
   margin: 0.2rem;
 }
 
+.weather-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background-color: #ffd60a;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.weather-container article{
+  background-color: #eee;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 4px;
+  border: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.weather-container article:nth-child(1){
+  background-color: #339cff;
+}
+
+.weather-container article:nth-child(1) h3{
+  color: #eee;
+}
+
+.weather-container article:nth-child(1) .weather-img p{
+  color: #eee;
+}
+
+.weather-container article:nth-child(1) .weather-info p:nth-child(2){
+  color: #eee;
+}
+
+.weather-container .weather-img{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid #333;
+}
+
+.weather-img p{
+  font-size: 1.2rem;
+}
+
+.weather-info{
+  text-align: center;
+}
+
+.weather-info p:nth-child(1){
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 1px solid #333;
+  padding: 0.5rem;
+  background-color: #ffd60a;
+  border-radius: 4px;
+}
+
 /* Poner el icono chiquitito en todas las paginas */
