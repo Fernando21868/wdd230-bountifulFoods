@@ -1,5 +1,6 @@
 // Get all imgs with data-src attribute
 const divToLoad = document.querySelectorAll('article[data-class]');
+const counter = document.querySelector('.fresh-drink-info p');
 
 // Optional parameters being set for the IntersectionObserver
 const imgOptions = {
@@ -39,4 +40,12 @@ if ('IntersectionObserver' in window) {
   divToLoad.forEach((divEl) => {
     loadImages(divEl);
   });
+}
+
+let exist = localStorage.getItem('drinks');
+if (exist) {
+  drinkList = JSON.parse(localStorage.getItem('drinks'));
+  counter.textContent = drinkList.length;
+} else {
+  counter.textContent = 0;
 }

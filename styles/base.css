@@ -66,7 +66,7 @@ nav ul.open {
 }
 
 nav ul.open li {
-  padding: 1rem;
+  padding: 0;
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -81,6 +81,11 @@ nav ul.open li.active {
 }
 
 nav ul.open li a {
+  padding: 1rem;
+  margin: 0px;
+  display: block;
+  width: 100%;
+  height: 100%;
   text-decoration: none;
 }
 
@@ -356,6 +361,11 @@ footer div:nth-child(2){
   text-align: center;
 }
 
+footer div:nth-child(2) p:nth-child(1){
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
 footer div:nth-child(2) a{
   text-decoration: none;
   font-weight: bold;
@@ -396,4 +406,151 @@ footer .copyright .separation {
   display: none;
 }
 
+/* FORM */
+
+.fresh-container{
+  padding: 1rem;
+}
+
+main .form-container {
+  border-radius: 4px;
+  padding: 1rem;
+  max-width: 30rem;
+  border: 1px solid #333;
+  background-color: #eee;
+}
+
+main form {
+  color: #333;
+  max-width: 20rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main .title-form {
+  text-align: center;
+}
+
+main .drink-icon {
+  text-align: center;
+}
+
+main .drink-icon svg {
+  width: 6rem;
+}
+
+form fieldset {
+  margin: 2rem 0;
+  border-radius: 4px;
+  border: 1px solid #333;
+  padding: 0.5rem 1rem 1rem;
+}
+
+form legend {
+  color: #333;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: #333;
+  font-size: 1rem;
+}
+
+form div {
+  font-style: normal;
+  margin-bottom: 0.5rem;
+}
+
+form label.top input,
+form label.top textarea,
+form label.top select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: solid 1px #333;
+  padding: 0.75rem;
+  color: #333;
+  width: 100%;
+  max-width: 20rem;
+  /* background-color: #eee; */
+}
+
+form label.top input:focus,
+form label.top textarea:focus,
+form label.top select:focus {
+  background-color: hsla(209, 100%, 60%, 0.7);
+  outline: none;
+  color: #333;
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75rem 0;
+  color: #333;
+}
+
+form input.button {
+  width: 100%;
+  cursor: pointer;
+}
+
+form input.submitBtn:hover {
+  background-color: hsla(209, 100%, 58%, 1);
+}
+
+form label.top input:required, form label.top select:required {
+  border: red solid 3px;
+}
+
+form label.top input:required:valid, form label.top select:required:valid {
+  border: green solid 3px;
+}
+
+.fresh-container{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.fresh-container .list{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0;
+  grid-gap: 1rem;
+  justify-items: center;
+}
+
+.fresh-container .list li{
+  width: 100%;
+  max-width: 350px;
+  list-style-type: none;
+  background-color: hsla(50, 100%, 52%, 0.7);
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid #333;
+}
+
+.fresh-container .list li div{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.fresh-container .list li div p{
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid #333;
+  margin: 0.5rem;
+  border-radius: 4px;
+  background-color: hsla(50, 100%, 52%, 1);
+  font-weight: bold;
+}
+
+.fresh-container .list li p span{
+  font-weight: bold;
+}
 /* Poner el icono chiquitito en todas las paginas */
