@@ -17,3 +17,10 @@ function toggleMenu() {
 }
 
 hamburger.addEventListener('click', toggleMenu);
+
+// Actual year-Last updated footer
+const now = new Date();
+const lastMod = new Date(document.lastModified);
+const currentYear = now.getFullYear();
+document.getElementById('actual-year').textContent = currentYear;
+document.getElementById('last-uptdated').textContent = document.lastModified;

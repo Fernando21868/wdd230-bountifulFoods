@@ -47,4 +47,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  footer ul, .social-media ul{
+    flex-direction: row;
+  }
+
+  footer .copyright .last-uptdated {
+    display: inline;
+  }
 }

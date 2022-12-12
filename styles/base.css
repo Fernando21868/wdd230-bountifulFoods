@@ -229,7 +229,8 @@ article.card,
 }
 
 .fresh{
-  height: 650px;
+  height: 100%;
+  padding-bottom: 1.5rem;
   background-color: #ffd60a;
 }
 
@@ -276,6 +277,7 @@ article.card,
 .fresh-info .button{
   background-color: hsla(209, 100%, 60%, 0.7);
   transition: background-color 0.3s;
+  overflow: auto;
 }
 
 .fresh-info .button:hover{
@@ -283,8 +285,8 @@ article.card,
 }
 
 .social-media{
+  height: 100%;
   padding: 1rem;
-  height: 430px;
   max-height: 600px;
 }
 
@@ -292,51 +294,15 @@ article.card,
   display: none;
 }
 
-.button.facebook{
-  background-color: hsla(220, 48%, 38%, 0.7);
-  color: #eee;
-  transition: background-color 0.3s;
-}
-
-.button.twitter{
-  background-color: hsla(206, 82%, 63%, 0.7);
-  color: #eee;
-  transition: background-color 0.3s;
-}
-
-.button.youtube{
-  background-color: hsla(2, 64%, 47%, 0.7);
-  color: #eee;
-  transition: background-color 0.3s;
-}
-
-.button.facebook:hover{
-  background-color: hsla(220, 48%, 38%, 1);
-}
-
-.button.twitter:hover{
-  background-color: hsla(206, 82%, 63%, 1);
-}
-
-.button.youtube:hover{
-  background-color: hsla(2, 64%, 47%, 1);
-}
-
-.social-media-info a{
-  display: inline-block;
-  margin: 0.2rem;
-}
-
 .weather-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   background-color: #ffd60a;
-  margin-top: 1rem;
   padding: 1rem;
 }
 
 .weather-container article{
-  background-color: #eee;
+  background-color: hsla(0, 0%, 93%, 0.7);
   padding: 1rem;
   margin: 1rem;
   border-radius: 4px;
@@ -348,19 +314,7 @@ article.card,
 }
 
 .weather-container article:nth-child(1){
-  background-color: #339cff;
-}
-
-.weather-container article:nth-child(1) h3{
-  color: #eee;
-}
-
-.weather-container article:nth-child(1) .weather-img p{
-  color: #eee;
-}
-
-.weather-container article:nth-child(1) .weather-info p:nth-child(2){
-  color: #eee;
+  background-color: hsla(209, 100%, 60%, 0.7);
 }
 
 .weather-container .weather-img{
@@ -387,6 +341,59 @@ article.card,
   padding: 0.5rem;
   background-color: #ffd60a;
   border-radius: 4px;
+}
+
+footer{
+  margin-top: 2rem;
+  background-color: #eee;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+footer div:nth-child(2){
+  text-align: center;
+}
+
+footer div:nth-child(2) a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer div:nth-child(2) a:hover{
+  color: #339cff;
+}
+
+footer ul, .social-media ul{
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer ul li svg, .social-media ul li svg{
+  width: 3rem;
+  margin: 1rem;
+}
+
+footer ul li, .social-media ul li{
+  list-style-type: none;
+}
+
+footer .copyright {
+  margin-top: 1rem;
+  width: 100%;
+  border-top: 1px solid #333;
+  text-align: center;
+}
+
+footer .copyright .name {
+  font-weight: bold;
+}
+
+footer .copyright .separation {
+  display: none;
 }
 
 /* Poner el icono chiquitito en todas las paginas */

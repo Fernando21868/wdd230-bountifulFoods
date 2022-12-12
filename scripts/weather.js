@@ -59,16 +59,19 @@ async function apiFetch() {
       };
       dataForecast.list.forEach((element, index) => {
         if (index == 8) {
+          forecastDay1.title=`Forecast for ${element.dt_txt.split(' ')[0].split('-').join('/')}`
             forecastDay1.temp = element.main.temp
             forecastDay1.description = element.weather[0].description
             forecastDay1.icon = element.weather[0].icon
             forecastDay1.humidity = element.main.humidity
         }else if(index===16){
+          forecastDay2.title=`Forecast for ${element.dt_txt.split(' ')[0].split('-').join('/')}`
             forecastDay2.temp = element.main.temp
             forecastDay2.description = element.weather[0].description
             forecastDay2.icon = element.weather[0].icon
             forecastDay2.humidity = element.main.humidity
         }else if (index===24){
+          forecastDay3.title=`Forecast for ${element.dt_txt.split(' ')[0].split('-').join('/')}`
             forecastDay3.temp = element.main.temp
             forecastDay3.description = element.weather[0].description
             forecastDay3.icon = element.weather[0].icon
