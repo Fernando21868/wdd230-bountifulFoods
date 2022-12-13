@@ -12,21 +12,21 @@
     list-style-type: none;
   }
 
-  header nav ul#primaryNav li {
+  /* header nav ul#primaryNav li {
     padding: 1rem;
-  }
+  } */
 
   header nav ul#primaryNav li:nth-child(2){
     margin-right: 0.5rem;
     margin-left: 0.5rem;
   }
 
-  header nav ul#primaryNav li.active {
+  header nav ul#primaryNav li.active a{
     border: 2px solid hsla(50, 100%, 52%, 0.5);
     border-radius: 5%;
   }
 
-  header nav ul#primaryNav li:hover {
+  header nav ul#primaryNav li:hover a{
     border: 2px solid hsla(50, 100%, 52%, 1);
     border-radius: 5%;
   }
@@ -34,6 +34,7 @@
   header nav ul#primaryNav a {
     text-decoration: none;
     font-size: 1.2rem;
+    padding: 1rem;
   }
 
   main .hero h1 {
@@ -54,5 +55,9 @@
 
   footer .copyright .last-uptdated {
     display: inline;
+  }
+
+  .about .card-container{
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

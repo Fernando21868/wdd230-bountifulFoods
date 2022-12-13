@@ -28,15 +28,20 @@ header {
 }
 
 .logo svg {
+  border: 1px solid #333;
+  background-color: #ffd60a;
+  border-radius: 50%;
+  padding: 0.5rem;
   cursor: pointer;
-  width: 75px;
+  width: 100px;
+  height: 100px;
 }
 
 .logo p {
   cursor: pointer;
   margin-top: 0;
   font-weight: bold;
-  color: #339cff;
+  color: #333333;
 }
 
 header nav ul {
@@ -135,7 +140,7 @@ nav ul.open li a {
 }
 
 .hamburgerBtn span {
-  color: #339cff;
+  color: #333333;
 }
 
 main.open {
@@ -534,13 +539,13 @@ form label.top input:required:valid, form label.top select:required:valid {
   border: 1px solid #333;
 }
 
-.fresh-container .list li div{
+.fresh-container .list li .fruits-list{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.fresh-container .list li div p{
+.fresh-container .list li .fruits-list p{
   padding: 0.5rem;
   text-align: center;
   border: 1px solid #333;
@@ -552,5 +557,37 @@ form label.top input:required:valid, form label.top select:required:valid {
 
 .fresh-container .list li p span{
   font-weight: bold;
+}
+
+.fresh-container .list li .fruits-data{
+  padding: 1rem;
+  background-color: #ffd60a;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+.about{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.about section{
+  justify-self: center;
+  max-width: 800px;
+  padding: 1rem;
+  text-align: center;
+  line-height: 1.2rem;
+  letter-spacing: 0.05rem;
+}
+
+.about article.card,
+.about .card-none {
+  max-width: 400px;
+}
+
+.about article.card .card-info,
+.about .card-none .card-info{
+  background-color: #eee;
+  height: 100%;
 }
 /* Poner el icono chiquitito en todas las paginas */
