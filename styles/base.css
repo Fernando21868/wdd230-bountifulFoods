@@ -32,13 +32,11 @@ header {
   background-color: #ffd60a;
   border-radius: 50%;
   padding: 0.5rem;
-  cursor: pointer;
   width: 100px;
   height: 100px;
 }
 
 .logo p {
-  cursor: pointer;
   margin-top: 0;
   font-weight: bold;
   color: #333333;
@@ -589,5 +587,37 @@ form label.top input:required:valid, form label.top select:required:valid {
 .about .card-none .card-info{
   background-color: #eee;
   height: 100%;
+}
+
+.map{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.map-content{
+  max-width: 600px;
+  text-align: center;
+}
+
+.map .map-info{
+  text-align: left;
+}
+
+.map .map-info-title{
+  margin-bottom: -0.5rem;
+}
+
+.map .map-info span{
+  font-weight: bold;
+}
+
+.map iframe{
+  border-radius: 4px;
+  border: 2px solid #333;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
 }
 /* Poner el icono chiquitito en todas las paginas */
