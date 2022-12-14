@@ -19,7 +19,6 @@ async function getData() {
   const response = await fetch(request);
   const fruits = await response.json();
   fruitsData = fruits;
-  console.log(fruitsData);
   fruits.forEach((fruit) => {
     const option = document.createElement('option');
     option.setAttribute('name', fruit.name);
@@ -127,7 +126,6 @@ button.addEventListener('click', function (e) {
         drinkObj.calories += data.nutritions.calories;
       }
     });
-    console.log(drinkObj);
     drinkList.push(drinkObj);
     fname.value = '';
     email.value = '';

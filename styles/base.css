@@ -4,7 +4,6 @@
   box-sizing: border-box;
   color: #333;
   font-style: normal;
-  /* ver si queda este color aqui o no posicionado */
 }
 
 body {
@@ -20,7 +19,6 @@ header {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  /* box-shadow: 30px 5px 30px #333; */
 }
 
 .logo {
@@ -409,8 +407,6 @@ footer .copyright .separation {
   display: none;
 }
 
-/* FORM */
-
 .fresh-container{
   padding: 1rem;
 }
@@ -621,4 +617,3 @@ form label.top input:required:valid, form label.top select:required:valid {
   max-width: 600px;
   height: 400px;
 }
-/* Poner el icono chiquitito en todas las paginas */
